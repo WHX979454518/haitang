@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_60"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/qinayue_rl"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/dimen_60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/zhaomuren2"
+                android:layout_below="@+id/qianyue_rl"
+                android:text="音乐人"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:textColor="@color/header_color"
+                android:textSize="@dimen/size_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:id="@+id/pay_musicans"
+                android:layout_below="@+id/zhaomuren2"
+                android:layout_marginTop="@dimen/dimen_25"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/project_head_image2"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="@dimen/dimen_48"
+                    android:layout_height="@dimen/dimen_48" />
+
+                <TextView
+                    android:id="@+id/cancel_cooperation"
+                    android:text="取消合作"
+                    android:padding="@dimen/dimen_8"
+                    android:background="@drawable/bg_registrationstas_bg"
+                    android:textColor="@color/base_blue"
+                    android:textSize="@dimen/size_15"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/music_name2"
+                    android:text="一白二穷工作室"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/project_head_image2"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/size_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/xiangmu_rl1"
+                android:layout_below="@+id/pay_musicans"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/project_name1"
+                    android:text="项目"
+                    android:textSize="@dimen/size_18"
+                    android:textColor="@color/header_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/project_contract1"
+                    android:text="查看合同"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/size_13"
+                    android:textColor="@color/base_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/project_name_tv1"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:text="项目名"
+                    android:layout_below="@+id/project_name1"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/color_66_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/project_image11"
+                    android:layout_alignBottom="@+id/project_name_tv1"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/icon_list_more_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/project_name_tv_describe1"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_marginLeft="@dimen/dimen_25"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/size_14"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:text="儿童游戏背景音乐商业使用权购买的服务..."
+                    android:layout_toRightOf="@+id/project_name_tv1"
+                    android:layout_toLeftOf="@+id/project_image11"
+                    android:layout_alignBottom="@+id/project_name_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/line"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:layout_below="@+id/project_name_tv_describe1"
+                    android:background="@color/toolbar_botom_devicer"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1">
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/project_cooperation_remuneration1"
+                    android:layout_marginTop="@dimen/dimen_15"
+                    android:text="合作稿酬"
+                    android:layout_below="@+id/line"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/color_66_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="￥"
+                    android:layout_toLeftOf="@+id/remuneration1"
+                    android:layout_alignBottom="@+id/project_cooperation_remuneration1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/remuneration1"
+                    android:textColor="@color/color_66_text"
+                    android:textSize="@dimen/size_14"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:layout_alignBottom="@+id/project_cooperation_remuneration1"
+                    android:text="300.00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:text="优惠券"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/color_66_text"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:layout_below="@+id/remuneration1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/youhuiquan_img"
+                    android:src="@mipmap/icon_list_more_gray"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/remuneration1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="暂无"
+                    android:layout_toLeftOf="@+id/youhuiquan_img"
+                    android:layout_marginTop="@dimen/dimen_22"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:layout_below="@+id/remuneration1"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/color_66_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="小计:"
+                    android:layout_below="@+id/youhuiquan_img"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:layout_toLeftOf="@+id/fuhao"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/color_66_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/fuhao"
+                    android:text="￥"
+                    android:layout_below="@+id/youhuiquan_img"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:layout_toLeftOf="@+id/allmoney"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/base_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/allmoney"
+                    android:text="300.00"
+                    android:layout_below="@+id/youhuiquan_img"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/base_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/zhifufangshi"
+                    android:text="选择支付方式"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:layout_below="@+id/allmoney"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/xaunze_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+                <com.mxkj.htmusic.toolmodule.utils.ExpandableLinearLayout
+                    android:id="@+id/ex_linear_layou"
+                    android:layout_marginTop="@dimen/dimen_20"
+                    android:layout_below="@+id/zhifufangshi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:tipTextSize="@dimen/size_15"
+                    app:hideText="收起支付方式"
+                    app:expandText="查看更多支付方式"
+                    app:tipTextColor="@color/header_prompt_color2"
+                    app:defaultItemCount="1"
+                    app:useDefaultBottom="true"
+
+                    >
+                </com.mxkj.htmusic.toolmodule.utils.ExpandableLinearLayout>
+
+
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/paymoney"
+        android:text="确认支付￥"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:textSize="@dimen/size_16"
+        android:textColor="@color/white_text"
+        android:background="@drawable/bg_releaseproject"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40" />
+
+
+</RelativeLayout>

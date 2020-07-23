@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+
+    <RelativeLayout
+        android:id="@+id/player_all_music"
+        android:background="@drawable/bg_type_layout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="@dimen/dimen_30"
+            android:textColor="@color/color_66_text"
+            android:textSize="@dimen/size_17"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/dimen_6"
+            android:text="选择作品用途及渠道"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/composition_rl"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/composition"
+                android:textColor="@color/header_color"
+                android:textSize="@dimen/size_15"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dimen_15"
+                android:text="视听平台"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="@color/toolbar_botom_devicer"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv_rl"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv"
+                android:textColor="@color/header_color"
+                android:textSize="@dimen/size_15"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dimen_15"
+                android:text="电视"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/lyrics_rl"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/lyrics"
+                android:textColor="@color/header_color"
+                android:textSize="@dimen/size_15"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dimen_15"
+                android:text="连续剧/动画、综艺"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="@color/toolbar_botom_devicer"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/network_rl"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/network"
+                android:textColor="@color/header_color"
+                android:textSize="@dimen/size_15"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dimen_15"
+                android:text="网络"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/singer_rl"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/singer"
+                android:textColor="@color/header_color"
+                android:textSize="@dimen/size_15"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dimen_15"
+                android:text="电影/微电影"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="@color/toolbar_botom_devicer"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/all_channels_rl"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/all_channels"
+                android:textColor="@color/header_color"
+                android:textSize="@dimen/size_15"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dimen_15"
+                android:text="全渠道"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/arrangements_rl"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/arrangements"
+                android:textColor="@color/header_color"
+                android:textSize="@dimen/size_15"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dimen_15"
+                android:text="商业广告/宣传片"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="@color/toolbar_botom_devicer"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+        </LinearLayout>
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/late_rl"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/late"
+                android:textColor="@color/header_color"
+                android:textSize="@dimen/size_15"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dimen_15"
+                android:text="网络短视频"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="@color/toolbar_botom_devicer"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.mxkj.htmusic.toolmodule.utils.MyListView
+            android:layout_weight="1"
+            android:id="@+id/projectdetails_lv"
+            android:divider="#00000000"
+            android:layout_below="@+id/xuqiugongzhong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+        </com.mxkj.htmusic.toolmodule.utils.MyListView>
+
+        <LinearLayout
+            android:background="@color/toolbar_botom_devicer"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="match_parent">
+        </LinearLayout>
+
+        <ListView
+            android:layout_weight="1"
+            android:id="@+id/projectdetails_list_lv"
+            android:layout_below="@+id/xuqiugongzhong"
+            android:divider="#00000000"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+        </ListView>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:background="@color/toolbar_botom_devicer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1" />
+
+    <RelativeLayout
+        android:id="@+id/cancel_rl"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60">
+        <TextView
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_cancel"
+            android:text="取消"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>

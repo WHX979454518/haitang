@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mxkj.htmusic">
+
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.mxkj.htmusic.toolmodule.web.HomeActivity">
+
+        </activity>
+        <activity android:name="com.mxkj.htmusic.toolmodule.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mxkj.htmusic.mymodule.activity.QuickLoginActivityNew"></activity>
+        <activity android:name="com.mxkj.htmusic.mymodule.activity.LoginRegMainPage"></activity>
+        <activity android:name="com.mxkj.htmusic.mymodule.activity.ForgetStepNew1"></activity>
+        <activity android:name="com.mxkj.htmusic.mymodule.activity.ForgetFoundPhoneAcivity"></activity>
+        <activity android:name="com.mxkj.htmusic.mymodule.activity.SettingPwdActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.projectmodule.activity.AddtypeActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.projectmodule.activity.ReleaseProjectActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.projectmodule.activity.RequirementsDescribeActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.projectmodule.activity.search.SearchActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.projectmodule.activity.ProjectDetailsActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.mymodule.activity.settings.SettingActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.mymodule.activity.settings.EditDataActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.mymodule.activity.MusiciansPersonalHomePageActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.mymodule.activity.RecruitPeopleParticipateActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.mymodule.activity.settings.EditProfileActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.mymodule.activity.settings.SecuritySettingsActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.mymodule.activity.ParticipateActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.mymodule.activity.RegistrationStatusActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.mymodule.activity.StateRecordsActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.mymodule.activity.RecruitPeopleRegistrationStatusActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.mymodule.activity.ContractActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.projectmodule.activity.SignUpActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.mymodule.activity.MyProjectRecruitPeopleParticipateActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.mymodule.activity.SendContractActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.projectmodule.activity.PlayerActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.projectmodule.activity.search.SearchResultActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.projectmodule.activity.AddNodeActivity"></activity>
+        <activity android:name="com.mxkj.htmusic.projectmodule.activity.RecruitPeoplePayActivity"></activity>
+
+
+        <!-- 支付宝相关 -->
+        <!-- ali_pay -->
+        <activity
+            android:name="com.mxkj.htmusic.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/myTransparent" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!--<activity-->
+            <!--android:name=".extraui.gift.SvgaAnimActivity"-->
+            <!--android:theme="@style/myTransparent" />-->
+        <activity
+            android:name="com.mxkj.yuanyintang.pay.qq_pay.QQPayCallbackActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/myTransparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="qwallet1106114082" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

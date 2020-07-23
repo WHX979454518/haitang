@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:padding="@dimen/dimen_10"
+            android:src="@mipmap/icon_login_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="状态记录"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/size_17" />
+        <LinearLayout
+            android:background="@color/toolbar_botom_devicer"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"></LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen_30"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/acceptance_ll"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dimen_18"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/progress_l5"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/projectjindu_typework"
+                    android:background="@drawable/bg_selected_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/dimen_6"
+                    android:background="@color/toolbar_botom_devicer"
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="@dimen/dimen_40"></LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/acceptance"
+                    android:text="招募人已验收"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/header_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/acceptancetime"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_below="@+id/acceptance"
+                    android:text="2019-02-14 12:56"
+                    android:textSize="@dimen/size_12"
+                    android:textColor="@color/header_prompt_color2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/pay_ll"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dimen_18"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/progress_l1"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/projectjindu_typework"
+                    android:background="@drawable/bg_selected_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/dimen_6"
+                    android:background="@color/toolbar_botom_devicer"
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="@dimen/dimen_40"></LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/pay"
+                    android:text="招募人支付保证金"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/header_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/paytime"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_below="@+id/pay"
+                    android:text="2019-02-12 12:56"
+                    android:textSize="@dimen/size_12"
+                    android:textColor="@color/header_prompt_color2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/qianyue_ll"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dimen_18"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/progress_l2"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/projectjindu_typework"
+                    android:background="@drawable/bg_selected_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/dimen_6"
+                    android:background="@color/toolbar_botom_devicer"
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="@dimen/dimen_40"></LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/qianyue"
+                    android:text="签约"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/header_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/qianyuetime"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_below="@+id/qianyue"
+                    android:text="2019-02-11 12:56"
+                    android:textSize="@dimen/size_12"
+                    android:textColor="@color/header_prompt_color2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/refusedqianyue_ll"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dimen_18"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/progress_l6"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/projectjindu_typework"
+                    android:background="@drawable/bg_redselected_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/dimen_6"
+                    android:background="@color/toolbar_botom_devicer"
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="@dimen/dimen_40"></LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/refusedqianyue"
+                    android:text="拒绝签约"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/header_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/refusedqianyuetime"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_below="@+id/refusedqianyue"
+                    android:text="2019-02-11 12:56"
+                    android:textSize="@dimen/size_12"
+                    android:textColor="@color/header_prompt_color2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/daiqianyue_ll"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dimen_18"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/progress_l3"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/projectjindu_typework"
+                    android:background="@drawable/bg_selected_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/dimen_6"
+                    android:background="@color/toolbar_botom_devicer"
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="@dimen/dimen_40"></LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/send_sign_up"
+                    android:text="招募人发送签约邀请"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/header_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/send_time"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_below="@+id/send_sign_up"
+                    android:text="2019-02-01 14:14"
+                    android:textSize="@dimen/size_12"
+                    android:textColor="@color/header_prompt_color2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sign_up_ll"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dimen_18"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/progress_l4"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/projectjindu_typework"
+                    android:background="@drawable/bg_selected_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/dimen_6"
+                    android:background="@color/toolbar_botom_devicer"
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="@dimen/dimen_100"></LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/sign_up"
+                    android:text="报名"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/header_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_below="@+id/sign_up"
+                    android:text="2019-02-01 14:14"
+                    android:textSize="@dimen/size_12"
+                    android:textColor="@color/header_prompt_color2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:background="@color/ed_code_color"
+                    android:layout_below="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/offer"
+                        android:text="我的报价"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:textColor="@color/color_66_text"
+                        android:textSize="@dimen/size_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/money"
+                        android:layout_toRightOf="@+id/offer"
+                        android:layout_alignBottom="@+id/offer"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:text="￥300.00"
+                        android:textColor="@color/color_66_text"
+                        android:textSize="@dimen/size_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/expect_it"
+                        android:text="预计用时"
+                        android:layout_below="@+id/offer"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:layout_marginBottom="@dimen/dimen_10"
+                        android:textColor="@color/color_66_text"
+                        android:textSize="@dimen/size_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/expect_time"
+                        android:layout_toRightOf="@+id/expect_it"
+                        android:layout_alignBottom="@+id/expect_it"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:text="45天"
+                        android:textColor="@color/color_66_text"
+                        android:textSize="@dimen/size_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:layout_below="@+id/projectjindu_name_tv"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>

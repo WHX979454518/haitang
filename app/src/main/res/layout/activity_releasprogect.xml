@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="项目标题"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:textColor="@color/header_color"
+                android:textSize="@dimen/size_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/project_title"
+                android:textSize="@dimen/size_15"
+                android:textColor="@color/header_color"
+                android:textColorHint="@color/not_choose_color"
+                android:layout_marginTop="@dimen/dimen_25"
+                android:layout_marginBottom="@dimen/dimen_25"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:hint="例如：三次元《青鸟》翻创招男歌手，限20字~"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/work_purposes_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50">
+                <TextView
+                    android:id="@+id/work_purposes"
+                    android:text="作品用途"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:textColor="@color/color_66_text"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/size_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_work_purposes"
+                    android:text=""
+                    android:layout_toRightOf="@+id/work_purposes"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/size_14"
+                    android:layout_marginLeft="@dimen/dimen_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:src="@mipmap/icon_list_more_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/confidentiality_period_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50">
+                <TextView
+                    android:id="@+id/confidentiality_period"
+                    android:text="保密期限"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:textColor="@color/color_66_text"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/size_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_confidentiality_period"
+                    android:text=""
+                    android:layout_toRightOf="@+id/confidentiality_period"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/size_14"
+                    android:layout_marginLeft="@dimen/dimen_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:src="@mipmap/icon_list_more_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/work_style_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50">
+                <TextView
+                    android:id="@+id/work_style"
+                    android:text="作品风格"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:textColor="@color/color_66_text"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/size_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_work_style"
+                    android:text=""
+                    android:layout_toRightOf="@+id/work_style"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/size_14"
+                    android:layout_marginLeft="@dimen/dimen_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:src="@mipmap/icon_list_more_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@color/ed_code_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_10">
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/type_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50">
+                <TextView
+                    android:id="@+id/type_name"
+                    android:text="工种*"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:textColor="@color/header_color"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/size_17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/release_project_add_type"
+                    android:text="添加"
+                    android:textSize="@dimen/size_15"
+                    android:textColor="@color/base_blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+            <com.mxkj.htmusic.toolmodule.utils.MyListView
+                android:id="@+id/releasproject_lv"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.mxkj.htmusic.toolmodule.utils.MyListView>
+
+            <RelativeLayout
+                android:id="@+id/all_budget_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50">
+                <TextView
+                    android:id="@+id/all_budget_tv"
+                    android:text="总预算"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:textColor="@color/color_66_text"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/size_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/all_budget"
+                    android:text=""
+                    android:layout_toRightOf="@+id/all_budget_tv"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/base_blue"
+                    android:textSize="@dimen/size_14"
+                    android:layout_marginLeft="@dimen/dimen_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:src="@mipmap/icon_list_more_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/demand_describe_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50">
+                <TextView
+                    android:id="@+id/tv_demand_describe_rl"
+                    android:text="需求描述*"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:textColor="@color/header_color"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/size_17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:src="@mipmap/icon_list_more_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/demand_describe"
+                android:text=""
+                android:textSize="@dimen/size_14"
+                android:textColor="@color/color_66_text"
+                android:textColorHint="@color/not_choose_color"
+                android:layout_marginTop="@dimen/dimen_25"
+                android:layout_marginBottom="@dimen/dimen_25"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:hint="例如：项目创作背景、其他创作人员情况、希望创作人得要求等，至少20字~"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen_125"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/size_12"
+                    android:textColor="@color/header_prompt_color2"
+                    android:text="发布即视为同意"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/size_12"
+                    android:textColor="@color/base_blue"
+                    android:text="《发布协议》"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dimen_15"
+                android:background="@color/toolbar_botom_devicer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1">
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/release"
+                android:text="发布"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/white_text"
+                android:background="@drawable/bg_releaseproject"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_price_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/baomi"
+                android:textSize="@dimen/size_14"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="保密期限"/>
+
+            <EditText
+                android:id="@+id/et_price"
+                android:layout_toRightOf="@+id/baomi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:background="@null"
+                android:hint=""/>
+            <TextView
+                android:layout_toRightOf="@+id/et_price"
+                android:textSize="@dimen/size_14"
+                android:textColor="@color/header_prompt_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="天"/>
+            <include
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_below="@+id/et_price"
+                layout="@layout/include_keyboardview"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

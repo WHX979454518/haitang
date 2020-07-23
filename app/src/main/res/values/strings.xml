@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <drawable name="clr_normal">@color/header_color</drawable>
+    <drawable name="clr_pressed">@color/base_blue</drawable>
+    <string name="collapse">收起</string>
+    <string name="expand">展开</string>
+
+</resources>

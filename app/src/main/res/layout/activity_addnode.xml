@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/node_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:padding="@dimen/dimen_10"
+            android:src="@mipmap/icon_login_close" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="验证码登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16"
+
+            />
+        <TextView
+            android:id="@+id/node_save"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:textColor="@color/base_blue"
+            android:textSize="@dimen/size_15"
+
+            />
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:background="@color/toolbar_botom_devicer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1">
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_node"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="@dimen/dimen_35"
+            android:text="定义验收节点"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_17"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dimen_35"
+            android:text="什么是验收节点?"
+            android:textColor="@color/base_blue"
+            android:textSize="@dimen/size_15"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_node_ed"
+        android:layout_below="@+id/rl_node"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/node"
+            android:layout_marginTop="@dimen/dimen_35"
+            android:text="验收点"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_66_text"
+            android:textSize="@dimen/size_15"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/node_ed"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dimen_35"
+            android:background="@null"
+            android:hint="5字以内，比如：复稿、再次审核"
+            android:textColorHint="@color/header_prompt_color2"
+            android:textColor="@color/header_color"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:textSize="@dimen/size_15"
+            android:layout_toRightOf="@+id/node"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rl_node_ed"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/node2"
+            android:layout_marginTop="@dimen/dimen_35"
+            android:text="累计保证金"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_66_text"
+            android:textSize="@dimen/size_15"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/node_margin_ed"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dimen_35"
+            android:background="@null"
+            android:hint="比例≥前一项"
+            android:textColorHint="@color/header_prompt_color2"
+            android:textColor="@color/header_color"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:textSize="@dimen/size_15"
+            android:layout_toRightOf="@+id/node2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/delect_node"
+        android:text="删除该节点"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:textSize="@dimen/size_16"
+        android:textColor="@color/white_text"
+        android:background="@drawable/bg_releaseproject"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40" />
+</RelativeLayout>

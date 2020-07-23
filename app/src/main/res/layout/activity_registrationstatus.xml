@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/qinayue_rl"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/qianyue_rl"
+                    android:background="@color/quanyue_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_60">
+                    <TextView
+                        android:id="@+id/registration_state"
+                        android:text="待签约"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/registration_state_describe"
+                        android:layout_marginRight="@dimen/dimen_15"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_13"
+                        android:text="你已成功报名，请等待招募人选择"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/xuqiumiaoshu_rl"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:layout_marginLeft="@dimen/dimen_30"
+                    android:layout_marginRight="@dimen/dimen_30"
+                    android:layout_below="@+id/qianyue_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/score_ll1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/xuqiumiaoshu"
+                            android:text="需求描述"
+                            android:textSize="@dimen/size_14"
+                            android:textColor="@color/color_66_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/xuqiu_onestars"
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/xuqiu_twostars"
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/xuqiu_threestars"
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/xuqiu_fourstars"
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/xuqiu_fivestars"
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/quality_of_work"
+                            android:text=""
+                            android:textColor="@color/bg_evaluation_color"
+                            android:textSize="@dimen/size_13"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/score_ll2"
+                        android:layout_marginTop="@dimen/dimen_25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="沟通态度"
+                            android:textSize="@dimen/size_14"
+                            android:textColor="@color/color_66_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/goutong_onestars"
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/communication_attitude"
+                            android:text=""
+                            android:textColor="@color/bg_evaluation_color"
+                            android:textSize="@dimen/size_13"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/score_ll3"
+                        android:layout_marginTop="@dimen/dimen_25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="反馈及时"
+                            android:textSize="@dimen/size_14"
+                            android:textColor="@color/color_66_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/fankui_onestars"
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/feedback"
+                            android:text=""
+                            android:textColor="@color/bg_evaluation_color"
+                            android:textSize="@dimen/size_13"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/score_ll4"
+                        android:layout_marginTop="@dimen/dimen_25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="验收准时"
+                            android:textSize="@dimen/size_14"
+                            android:textColor="@color/color_66_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/yanshou_onestars"
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:background="@mipmap/icon_start_gray"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/acceptance"
+                            android:text=""
+                            android:textColor="@color/bg_evaluation_color"
+                            android:textSize="@dimen/size_13"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/et_song_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_70"
+                        android:gravity="left"
+                        android:layout_marginTop="@dimen/dimen_20"
+                        android:background="@drawable/oval_5dp_gray_bg"
+                        android:hint="沟通顺畅，作品质量还可以，下次还想合作"
+                        android:maxLength="20"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="12dp"
+                        android:textColor="#616366"
+                        android:textColorHint="#c2c8cc"
+                        android:textSize="@dimen/size_14" />
+
+                    <TextView
+                        android:id="@+id/submit_evaluation"
+                        android:text="提交评价"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_16"
+                        android:background="@drawable/bg_evaluation"
+                        android:layout_marginTop="@dimen/dimen_15"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_40" />
+
+                    <LinearLayout
+                        android:id="@+id/signing_failed_ll"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/qianyue_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="拒绝原因"
+                            android:textSize="@dimen/size_18"
+                            android:textColor="@color/header_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="不好意思来不及做"
+                            android:layout_marginTop="@dimen/dimen_25"
+                            android:textSize="@dimen/size_14"
+                            android:textColor="@color/header_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/xuqiumiaoshu_ll"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/xuqiumiaoshu_rl"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:background="@color/ed_code_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_20">
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/xiangmu_rl"
+                    android:layout_below="@+id/xuqiumiaoshu_ll"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/project_name"
+                        android:text="项目"
+                        android:textSize="@dimen/size_18"
+                        android:textColor="@color/header_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/project_contract"
+                        android:text="查看合同"
+                        android:layout_alignParentRight="true"
+                        android:textSize="@dimen/size_13"
+                        android:textColor="@color/base_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:id="@+id/project_name_tv"
+                        android:layout_marginTop="@dimen/dimen_25"
+                        android:text="项目名"
+                        android:layout_below="@+id/project_name"
+                        android:textSize="@dimen/size_14"
+                        android:textColor="@color/color_66_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/project_image1"
+                        android:layout_alignBottom="@+id/project_name_tv"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/icon_list_more_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/project_name_tv_describe"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="@dimen/dimen_25"
+                        android:textColor="@color/header_color"
+                        android:textSize="@dimen/size_14"
+                        android:layout_marginRight="@dimen/dimen_15"
+                        android:text="儿童游戏背景音乐商业使用权购买的服务..."
+                        android:layout_toRightOf="@+id/project_name_tv"
+                        android:layout_toLeftOf="@+id/project_image1"
+                        android:layout_alignBottom="@+id/project_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:id="@+id/project_typework"
+                        android:layout_marginTop="@dimen/dimen_25"
+                        android:text="工种"
+                        android:layout_below="@+id/project_name_tv"
+                        android:textSize="@dimen/size_14"
+                        android:textColor="@color/color_66_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/type"
+                        android:textColor="@color/header_color"
+                        android:textSize="@dimen/size_14"
+                        android:layout_alignLeft="@+id/project_name_tv_describe"
+                        android:layout_marginRight="@dimen/dimen_15"
+                        android:layout_toRightOf="@+id/project_typework"
+                        android:text="CV"
+                        android:layout_alignBottom="@+id/project_typework"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <TextView
+                        android:id="@+id/project_cooperation_period"
+                        android:layout_marginTop="@dimen/dimen_25"
+                        android:text="合作周期"
+                        android:layout_below="@+id/project_typework"
+                        android:textSize="@dimen/size_14"
+                        android:textColor="@color/color_66_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/cycle"
+                        android:textColor="@color/header_color"
+                        android:textSize="@dimen/size_14"
+                        android:layout_alignLeft="@+id/project_name_tv_describe"
+                        android:layout_marginRight="@dimen/dimen_15"
+                        android:layout_toRightOf="@+id/project_cooperation_period"
+                        android:layout_alignBottom="@+id/project_cooperation_period"
+                        android:text="45天"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/project_cooperation_remuneration"
+                        android:layout_marginTop="@dimen/dimen_25"
+                        android:text="合作稿酬"
+                        android:layout_below="@+id/project_cooperation_period"
+                        android:textSize="@dimen/size_14"
+                        android:textColor="@color/color_66_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/remuneration"
+                        android:textColor="@color/header_color"
+                        android:textSize="@dimen/size_14"
+                        android:layout_alignLeft="@+id/project_name_tv_describe"
+                        android:layout_marginRight="@dimen/dimen_15"
+                        android:layout_toRightOf="@+id/project_cooperation_remuneration"
+                        android:layout_alignBottom="@+id/project_cooperation_remuneration"
+                        android:text="￥300.00"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/zhaomuren"
+                    android:layout_below="@+id/xiangmu_rl"
+                    android:text="招募人"
+                    android:layout_marginTop="@dimen/dimen_40"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/size_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:id="@+id/lianxiren"
+                    android:layout_below="@+id/zhaomuren"
+
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/project_head_image"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="@dimen/dimen_48"
+                        android:layout_height="@dimen/dimen_48" />
+
+                    <TextView
+                        android:text="联系TA"
+                        android:padding="@dimen/dimen_8"
+                        android:background="@drawable/bg_registrationstas_bg"
+                        android:textColor="@color/base_blue"
+                        android:textSize="@dimen/size_15"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/music_name"
+                        android:text="一白二穷工作室"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/project_head_image"
+                        android:textColor="@color/header_color"
+                        android:textSize="@dimen/size_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/biaozhu"
+                    android:layout_marginTop="@dimen/dimen_40"
+                    android:layout_marginBottom="@dimen/dimen_80"
+                    android:layout_marginLeft="@dimen/size_15"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/base_blue"
+                    android:layout_below="@+id/lianxiren"
+                    android:text="注：签约将在2天23小时33分后关闭"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dimen_34"
+                android:id="@+id/status_progress"
+                android:layout_below="@+id/qinayue_rl"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/xiangmujindu_rl"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:layout_marginBottom="@dimen/dimen_100"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/projectjindu_name"
+                        android:text="项目进度"
+                        android:textSize="@dimen/size_18"
+                        android:textColor="@color/header_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:text="上传作品"
+                        android:background="@drawable/bg_registrationstas_bg"
+                        android:padding="@dimen/dimen_8"
+                        android:layout_alignParentRight="true"
+                        android:textSize="@dimen/size_13"
+                        android:textColor="@color/base_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:id="@+id/projectjindu_name_tv"
+                        android:layout_marginTop="@dimen/dimen_25"
+                        android:text="截止日"
+                        android:layout_below="@+id/projectjindu_name"
+                        android:textSize="@dimen/size_14"
+                        android:textColor="@color/header_prompt_color2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/projectjindu_image1"
+                        android:text="还剩30天13小时45分"
+                        android:textColor="@color/base_blue"
+                        android:textSize="@dimen/size_12"
+                        android:layout_alignBottom="@+id/projectjindu_name_tv"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/projectjindu_name_tv_describe"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="@dimen/dimen_25"
+                        android:textColor="@color/header_prompt_color2"
+                        android:textSize="@dimen/size_14"
+                        android:layout_marginRight="@dimen/dimen_15"
+                        android:text="2019-03-20"
+                        android:layout_toRightOf="@+id/projectjindu_name_tv"
+                        android:layout_toLeftOf="@+id/projectjindu_image1"
+                        android:layout_alignBottom="@+id/projectjindu_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <LinearLayout
+                        android:id="@+id/progress_l1"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/dimen_25"
+                        android:layout_below="@+id/projectjindu_name_tv"
+                        android:background="@drawable/bg_notselected_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:id="@+id/projectjindu_typework"
+                        android:layout_marginTop="@dimen/dimen_25"
+                        android:text="预付金"
+                        android:layout_marginLeft="@dimen/dimen_12"
+                        android:layout_toRightOf="@+id/progress_l1"
+                        android:layout_alignBottom="@+id/progress_l1"
+                        android:textSize="@dimen/size_14"
+                        android:textColor="@color/color_66_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/projectjindu_time"
+                        android:textColor="@color/header_color"
+                        android:textSize="@dimen/size_14"
+                        android:layout_marginLeft="@dimen/dimen_20"
+                        android:layout_toRightOf="@+id/projectjindu_typework"
+                        android:text="开始"
+                        android:layout_alignBottom="@+id/projectjindu_typework"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/header_prompt_color2"
+                        android:textSize="@dimen/size_14"
+                        android:layout_marginLeft="@dimen/dimen_20"
+                        android:layout_toRightOf="@+id/projectjindu_time"
+                        android:text="02-17"
+                        android:layout_alignBottom="@+id/projectjindu_typework"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <LinearLayout
+                        android:id="@+id/progress_l2"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/dimen_40"
+                        android:layout_below="@+id/projectjindu_typework"
+                        android:background="@drawable/bg_selected_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/projectjindu_cooperation_period"
+                        android:text="40%"
+                        android:layout_toRightOf="@+id/progress_l2"
+                        android:layout_alignBottom="@+id/progress_l2"
+                        android:layout_marginLeft="@dimen/dimen_12"
+                        android:textSize="@dimen/size_14"
+                        android:textColor="@color/header_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/yigao"
+                        android:textColor="@color/header_color"
+                        android:textSize="@dimen/size_14"
+                        android:layout_marginRight="@dimen/dimen_15"
+                        android:layout_alignLeft="@+id/projectjindu_time"
+                        android:layout_toRightOf="@+id/projectjindu_cooperation_period"
+                        android:layout_alignBottom="@+id/projectjindu_cooperation_period"
+                        android:text="一稿"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/mvrl"
+                        android:layout_below="@+id/yigao"
+                        android:layout_marginTop="@dimen/dimen_15"
+                        android:layout_marginBottom="@dimen/dimen_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <!--点击上传视频   上传前-->
+                        <RelativeLayout
+
+                            android:id="@+id/beforeUploadvideo"
+                            android:layout_width="0dp"
+                            android:layout_height="77dp"
+                            android:layout_weight="1"
+                            android:background="#f4f5f9">
+
+                            <TextView
+                                android:id="@+id/mv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:drawablePadding="@dimen/dimen_10"
+                                android:drawableTop="@mipmap/icon_add_picture"
+                                android:gravity="center"
+                                android:text="点击上传视频(不超过300M)"
+                                android:textColor="#9da3a6"
+                                android:textSize="@dimen/size_12" />
+
+                        </RelativeLayout>
+                        <!--上传中-->
+                        <LinearLayout
+                            android:id="@+id/llUploadingvideo"
+                            android:layout_width="0dp"
+                            android:layout_height="77dp"
+                            android:layout_weight="1"
+                            android:background="#f4f5f9"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dimen_15"
+                                android:layout_marginLeft="@dimen/dimen_10"
+                                android:layout_marginTop="@dimen/dimen_10"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_videoName"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="..."
+                                    android:textColor="#2b2b2b"
+                                    android:textSize="@dimen/size_13"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_videoprogress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/dimen_10"
+                                    android:text="0M  0%"
+                                    android:textColor="@color/login_gray"
+                                    android:textSize="@dimen/size_10" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_10"
+                                android:layout_marginTop="@dimen/dimen_10"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ProgressBar
+                                    android:id="@+id/progress_uoloadvideo"
+                                    style="@style/mProgress_uploading_music"
+                                    android:layout_width="0dp"
+                                    android:max="100"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:progressDrawable="@drawable/progressbar_uploading"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/iv_canclevideo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/dimen_10"
+                                    android:src="@mipmap/icon_addmusic_delete" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/progress_l3"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/dimen_40"
+                        android:layout_below="@+id/mvrl"
+                        android:background="@drawable/bg_selected_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/projectjindu_cooperation_period2"
+                        android:text="60%"
+                        android:layout_toRightOf="@+id/progress_l3"
+                        android:layout_alignBottom="@+id/progress_l3"
+                        android:layout_marginLeft="@dimen/dimen_13"
+                        android:textSize="@dimen/size_14"
+                        android:textColor="@color/header_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/ergao"
+                        android:textColor="@color/header_color"
+                        android:textSize="@dimen/size_14"
+                        android:layout_marginRight="@dimen/dimen_15"
+                        android:layout_alignLeft="@+id/projectjindu_time"
+                        android:layout_toRightOf="@+id/projectjindu_cooperation_period2"
+                        android:layout_alignBottom="@+id/projectjindu_cooperation_period2"
+                        android:text="二稿"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:id="@+id/progress_l4"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/dimen_40"
+                        android:layout_below="@+id/ergao"
+                        android:background="@drawable/bg_selected_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/projectjindu_cooperation_period3"
+                        android:text="100%"
+                        android:layout_toRightOf="@+id/progress_l4"
+                        android:layout_alignBottom="@+id/progress_l4"
+                        android:layout_marginLeft="@dimen/dimen_14"
+                        android:textSize="@dimen/size_14"
+                        android:textColor="@color/header_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/zhonggao"
+                        android:textColor="@color/header_color"
+                        android:textSize="@dimen/size_14"
+                        android:layout_marginRight="@dimen/dimen_15"
+                        android:layout_alignLeft="@+id/projectjindu_time"
+                        android:layout_toRightOf="@+id/projectjindu_cooperation_period3"
+                        android:layout_alignBottom="@+id/projectjindu_cooperation_period3"
+                        android:text="终稿"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/projectjindu_cooperation_remuneration"
+                        android:layout_marginTop="@dimen/dimen_20"
+                        android:text="命运歌姬主题曲20170218.ppt"
+                        android:layout_below="@+id/projectjindu_cooperation_period"
+                        android:layout_alignLeft="@+id/projectjindu_cooperation_period"
+                        android:textSize="@dimen/size_13"
+                        android:textColor="@color/color_66_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/project_shanare"
+                        android:textColor="@color/color_66_text"
+                        android:textSize="@dimen/size_13"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignBottom="@+id/projectjindu_cooperation_remuneration"
+                        android:text="分享"
+                        android:background="@drawable/bg_whileregistrationstas_bg"
+                        android:padding="@dimen/dimen_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:visibility="gone"
+                        android:textColor="@color/color_66_text"
+                        android:textSize="@dimen/size_13"
+                        android:layout_toLeftOf="@+id/project_shanare"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        android:layout_alignBottom="@+id/projectjindu_cooperation_remuneration"
+                        android:text="查看"
+                        android:background="@drawable/bg_whileregistrationstas_bg"
+                        android:padding="@dimen/dimen_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/submit"
+                        android:text="确定提交"
+                        android:layout_marginTop="@dimen/dimen_12"
+                        android:layout_below="@+id/projectjindu_cooperation_remuneration"
+                        android:layout_alignLeft="@+id/projectjindu_cooperation_remuneration"
+                        android:textSize="@dimen/size_13"
+                        android:textColor="@color/header_prompt_color2"
+                        android:background="@drawable/bg_whileregistrationstas_bg"
+                        android:padding="@dimen/dimen_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/projectjindu_cooperation_remuneration2"
+                        android:layout_marginTop="@dimen/dimen_22"
+                        android:text="命运歌姬主题曲20170218.mp3"
+                        android:layout_below="@+id/submit"
+                        android:layout_alignLeft="@+id/projectjindu_cooperation_period"
+                        android:textSize="@dimen/size_13"
+                        android:textColor="@color/color_66_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/project_delete"
+                        android:textColor="@color/color_66_text"
+                        android:textSize="@dimen/size_13"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignBottom="@+id/projectjindu_cooperation_remuneration2"
+                        android:text="删除"
+                        android:background="@drawable/bg_whileregistrationstas_bg"
+                        android:padding="@dimen/dimen_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/project_audition"
+                        android:textColor="@color/color_66_text"
+                        android:textSize="@dimen/size_13"
+                        android:layout_toLeftOf="@+id/project_shanare"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        android:layout_alignBottom="@+id/projectjindu_cooperation_remuneration2"
+                        android:text="试听"
+                        android:background="@drawable/bg_whileregistrationstas_bg"
+                        android:padding="@dimen/dimen_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/submit2"
+                        android:text="确定提交"
+                        android:layout_marginTop="@dimen/dimen_12"
+                        android:layout_below="@+id/project_audition"
+                        android:layout_alignLeft="@+id/projectjindu_cooperation_remuneration"
+                        android:textSize="@dimen/size_13"
+                        android:textColor="@color/base_blue"
+                        android:background="@drawable/bg_registrationstas_bg"
+                        android:padding="@dimen/dimen_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60">
+        <LinearLayout
+            android:background="@color/toolbar_botom_devicer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1">
+        </LinearLayout>
+
+
+        <!--待签约-->
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/refused_sign"
+            android:layout_toLeftOf="@+id/sgree_sign"
+            android:text="拒绝签约"
+            android:textSize="@dimen/size_15"
+            android:textColor="@color/base_blue"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_registrationstas_bg"
+            android:padding="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/sgree_sign"
+            android:text="同意签约"
+            android:layout_toLeftOf="@+id/state_records"
+            android:textSize="@dimen/size_15"
+            android:textColor="@color/base_blue"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_registrationstas_bg"
+            android:padding="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <!--进行中-->
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/delay"
+            android:layout_toLeftOf="@+id/state_records"
+            android:text="申请延期"
+            android:textSize="@dimen/size_15"
+            android:textColor="@color/base_blue"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_registrationstas_bg"
+            android:padding="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/termination"
+            android:text="申请终止"
+            android:layout_toLeftOf="@+id/delay"
+            android:textSize="@dimen/size_15"
+            android:textColor="@color/base_blue"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_registrationstas_bg"
+            android:padding="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/state_records"
+            android:text="状态记录"
+            android:textSize="@dimen/size_15"
+            android:textColor="@color/base_blue"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_registrationstas_bg"
+            android:padding="@dimen/dimen_8"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

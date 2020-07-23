@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/being_pushed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15">
+
+        <TextView
+            android:id="@+id/anquanyouxaing"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_60"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/size_16"
+            android:layout_centerVertical="true"
+            android:text="安全邮箱" />
+
+
+        <EditText
+            android:hint="去绑定，获得成长积分+一份礼包"
+            android:background="@null"
+            android:textColorHint="@color/not_choose_color"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_60"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_toRightOf="@+id/anquanyouxaing"
+            android:layout_toLeftOf="@+id/next"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/size_15"
+            android:layout_centerVertical="true" />
+
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_list_more_gray"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

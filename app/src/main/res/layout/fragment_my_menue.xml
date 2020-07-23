@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mySongList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:drawableLeft="@mipmap/icon_my_myaccount"
+        android:drawablePadding="@dimen/dimen_10"
+        android:drawableRight="@mipmap/icon_list_more_gray"
+        android:gravity="center_vertical"
+        android:text="我的账户"
+        android:textColor="#1a1a1a"
+        android:textSize="@dimen/size_16"
+
+        />
+
+    <TextView
+        android:id="@+id/myLikeSongList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:drawableLeft="@mipmap/icon_my_mycoupon"
+        android:drawablePadding="@dimen/dimen_10"
+        android:drawableRight="@mipmap/icon_list_more_gray"
+        android:gravity="center_vertical"
+        android:text="我的优惠券"
+        android:textColor="#1a1a1a"
+        android:textSize="@dimen/size_16"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:textColor="#9da2a6" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:background="#ebebeb" />
+
+    <RelativeLayout
+        android:id="@+id/layout_doughnut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tianquanquan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:drawableLeft="@mipmap/icon_my_uploadwork"
+            android:drawablePadding="@dimen/dimen_10"
+            android:drawableRight="@mipmap/icon_list_more_gray"
+            android:gravity="center_vertical"
+            android:text="上传作品"
+            android:textColor="#1a1a1a"
+            android:textSize="@dimen/size_16"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myFish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:drawableLeft="@mipmap/icon_my_identity"
+            android:drawablePadding="@dimen/dimen_10"
+            android:drawableRight="@mipmap/icon_list_more_gray"
+            android:gravity="center_vertical"
+            android:text="身份认证"
+
+            android:textColor="#1a1a1a"
+            android:textSize="@dimen/size_16"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_fish_num"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_45"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_45"
+            android:drawablePadding="@dimen/dimen_10"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#9da2a6"
+            android:textSize="@dimen/size_14"
+
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:textColor="#9da2a6" />
+
+    <TextView
+        android:id="@+id/toAuth"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:drawableLeft="@mipmap/icon_my_musician"
+        android:drawablePadding="@dimen/dimen_10"
+        android:drawableRight="@mipmap/icon_list_more_gray"
+        android:gravity="center_vertical"
+        android:text="音乐人认证"
+        android:textColor="#1a1a1a"
+        android:textSize="@dimen/size_16"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:background="#ebebeb" />
+
+
+    <TextView
+        android:id="@+id/toRelease"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:drawableLeft="@mipmap/icon_my_helpcenter"
+        android:drawablePadding="@dimen/dimen_10"
+        android:drawableRight="@mipmap/icon_list_more_gray"
+        android:gravity="center_vertical"
+        android:text="帮助中心"
+        android:textColor="#1a1a1a"
+        android:textSize="@dimen/size_16"
+
+        />
+
+    <TextView
+        android:id="@+id/helpCenter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:drawableLeft="@mipmap/icon_my_invitation"
+        android:drawablePadding="@dimen/dimen_10"
+        android:drawableRight="@mipmap/icon_list_more_gray"
+        android:gravity="center_vertical"
+        android:text="邀请好友"
+        android:textColor="#1a1a1a"
+        android:textSize="@dimen/size_16"
+
+        />
+
+    <TextView
+        android:id="@+id/feedBack"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:drawableLeft="@mipmap/icon_my_feedback"
+        android:drawablePadding="@dimen/dimen_10"
+        android:drawableRight="@mipmap/icon_list_more_gray"
+        android:gravity="center_vertical"
+        android:text="用户反馈"
+        android:textColor="#1a1a1a"
+        android:textSize="@dimen/size_16"
+
+        />
+
+
+</LinearLayout>

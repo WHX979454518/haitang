@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+
+    <RelativeLayout
+        android:id="@+id/player_all_music"
+        android:background="@drawable/bg_type_layout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/baomiqixian"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:textColor="@color/color_66_text"
+            android:textSize="@dimen/size_17"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/dimen_6"
+            android:text="保密期限"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/baomiqixian"
+            android:textColor="@color/header_prompt_color2"
+            android:textSize="@dimen/size_13"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/dimen_6"
+            android:text="音乐人在保密期间不能私自公开"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/composition_rl"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/composition"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/size_15"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dimen_15"
+            android:text="无"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyrics_rl"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lyrics"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/size_15"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dimen_15"
+            android:text="一个月"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/singer_rl"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/singer"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/size_15"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dimen_15"
+            android:text="三个月"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/arrangements_rl"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/arrangements"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/size_15"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dimen_15"
+            android:text="半年"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/late_rl"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/zidingyi"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/size_15"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dimen_15"
+            android:text="自定义"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/ed_custom"
+            android:text=""
+            style="@style/EngEditText"
+            android:layout_toRightOf="@+id/zidingyi"
+            android:textColor="@color/header_color"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/dimen_70"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toRightOf="@+id/ed_custom"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/size_15"
+            android:layout_centerVertical="true"
+            android:text="天"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/toolbar_botom_devicer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1" />
+
+    <RelativeLayout
+        android:id="@+id/cancel_rl"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60">
+        <TextView
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_cancel"
+            android:text="取消"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>

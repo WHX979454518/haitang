@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/llMainInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/setting_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_44">
+            <ImageView
+                android:id="@+id/ivSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dimen_8"
+                android:src="@mipmap/icon_my_setup" />
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/layout_personal"
+            android:layout_below="@+id/setting_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_islogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="登录海塘"
+                        android:textColor="@color/header_color"
+                        android:textSize="@dimen/size_18"
+
+                        />
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_name"
+                        android:src="@mipmap/icon_musician_lv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_pondnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingBottom="@dimen/dimen_10"
+                        android:text="音乐人"
+                        android:textColor="@color/color_66_text"
+                        android:textSize="@dimen/size_13" />
+
+
+                    <TextView
+                        android:id="@+id/switch_identity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_pondnum"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:text=""
+                        android:drawableLeft="@mipmap/icon_my_exchange"
+                        android:padding="@dimen/dimen_2"
+                        android:textColor="@color/color_66_text"
+                        android:textSize="@dimen/size_13" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="女"
+                        android:textColor="@color/color_66_text"
+                        android:textSize="@dimen/size_13" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        android:text="|"
+                        android:textColor="@color/toolbar_botom_devicer"
+                        android:textSize="@dimen/size_13" />
+
+                    <TextView
+                        android:id="@+id/tv_fans_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="23"
+                        android:textColor="@color/color_66_text"
+                        android:textSize="@dimen/size_13" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        android:text="|"
+                        android:textColor="@color/toolbar_botom_devicer"
+                        android:textSize="@dimen/size_13" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:text="成都"
+                        android:textColor="@color/color_66_text"
+                        android:textSize="@dimen/size_13" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_width="@dimen/dimen_75"
+                android:layout_height="@dimen/dimen_75">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_headimg"
+                    android:layout_width="@dimen/dimen_75"
+                    android:layout_height="@dimen/dimen_75"
+                    android:layout_gravity="bottom"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher"
+                    app:civ_border_color="@color/dividing_line_color"
+                    app:civ_border_width="@dimen/dimen_2" />
+
+                <ImageView
+                    android:id="@+id/iv_is_vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/ic_launcher"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--四个-->
+    <LinearLayout
+        android:id="@+id/my_ll"
+        android:layout_below="@+id/llMainInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_25"
+        android:layout_marginRight="@dimen/dimen_25"
+        android:layout_marginBottom="@dimen/dimen_2"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_10">
+
+        <LinearLayout
+            android:id="@+id/llLocalMusic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:src="@mipmap/icon_my_myproject" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="我参与的"
+                android:textColor="@color/color_66_text"
+                android:textSize="@dimen/size_13" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/myCollection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:src="@mipmap/icon_my_mycollect" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="我的收藏"
+                android:textColor="@color/color_66_text"
+                android:textSize="@dimen/size_13"
+
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/download_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:src="@mipmap/icon_my_myfans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="粉丝"
+                android:textColor="@color/color_66_text"
+                android:textSize="@dimen/size_13"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/playHistory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:src="@mipmap/icon_my_myfollow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="关注"
+                android:textColor="@color/color_66_text"
+                android:textSize="@dimen/size_13"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

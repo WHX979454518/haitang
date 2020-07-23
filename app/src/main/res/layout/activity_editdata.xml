@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_height="@dimen/dimen_60">
+                <TextView
+                    android:id="@+id/editdata_name"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"
+                    android:textColor="@color/color_66_text"
+                    android:textSize="@dimen/size_15" />
+
+                <EditText
+                    android:id="@+id/edit_add"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/editdata_name"
+                    android:hint="输入姓名或昵称"
+                    android:background="@null"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/size_15"
+                    android:textColorHint="@color/not_choose_color"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_height="@dimen/dimen_60">
+                <TextView
+                    android:id="@+id/editdata_sex"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别"
+                    android:textColor="@color/color_66_text"
+                    android:textSize="@dimen/size_15" />
+
+                <TextView
+                    android:id="@+id/male"
+                    android:text="男"
+                    android:background="@drawable/bg_choosetag"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:paddingLeft="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_15"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_toRightOf="@+id/editdata_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/female"
+                    android:text="女"
+                    android:background="@drawable/bg_search"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:paddingLeft="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_15"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_toRightOf="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_height="@dimen/dimen_60">
+                <TextView
+                    android:id="@+id/editdata_birthday"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生日"
+                    android:textColor="@color/color_66_text"
+                    android:textSize="@dimen/size_15" />
+
+                <EditText
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/editdata_birthday"
+                    android:hint="选择出生年月"
+                    android:background="@null"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/size_15"
+                    android:textColorHint="@color/not_choose_color"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_list_more_gray"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_height="@dimen/dimen_60">
+                <TextView
+                    android:id="@+id/editdata_city"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="城市"
+                    android:textColor="@color/color_66_text"
+                    android:textSize="@dimen/size_15" />
+
+                <EditText
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/editdata_city"
+                    android:hint="选择所在城市"
+                    android:background="@null"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/size_15"
+                    android:textColorHint="@color/not_choose_color"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_list_more_gray"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@color/toolbar_botom_devicer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"></LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_height="@dimen/dimen_60">
+                <TextView
+                    android:id="@+id/editdata_qq"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QQ"
+                    android:textColor="@color/color_66_text"
+                    android:textSize="@dimen/size_15" />
+
+                <EditText
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/editdata_qq"
+                    android:hint="去绑定，获得成长积分+一份礼包"
+                    android:background="@null"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/size_15"
+                    android:textColorHint="@color/not_choose_color"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_list_more_gray"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_height="@dimen/dimen_60">
+                <TextView
+                    android:id="@+id/editdata_wexin"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信"
+                    android:textColor="@color/color_66_text"
+                    android:textSize="@dimen/size_15" />
+
+                <EditText
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/editdata_wexin"
+                    android:hint="去绑定，获得成长积分+一份礼包"
+                    android:background="@null"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/size_15"
+                    android:textColorHint="@color/not_choose_color"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_list_more_gray"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_height="@dimen/dimen_60">
+                <TextView
+                    android:id="@+id/editdata_weibo"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微博"
+                    android:textColor="@color/color_66_text"
+                    android:textSize="@dimen/size_15" />
+
+                <EditText
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/editdata_weibo"
+                    android:hint="去绑定，获得成长积分+一份礼包"
+                    android:background="@null"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/size_15"
+                    android:textColorHint="@color/not_choose_color"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_list_more_gray"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消息"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/size_17"/>
+
+        <ImageView
+            android:id="@+id/music"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:src="@mipmap/icon_index_play"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginTop="@dimen/dimen_65"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.flyco.tablayout.SousuoSlidingTabLayout
+                android:id="@+id/message_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                app:tl_indicator_color="@color/color_17_text"
+                app:tl_indicator_corner_radius="1.5dp"
+                app:tl_indicator_height="0dp"
+                app:tl_indicator_margin_bottom="@dimen/dimen_3"
+                app:tl_indicator_width="10dp"
+                app:tl_indicator_width_equal_title="false"
+                app:tl_tab_space_equal="false"
+                app:tl_textSelectColor="@color/color_17_text"
+                app:tl_textUnselectColor="#616466"
+                app:tl_textsize="@dimen/size_14"
+                app:tl_underline_color="@color/dividing_line_color"
+                app:tl_underline_gravity="BOTTOM"
+                app:tl_underline_height="0.8dp" />
+
+            <com.mxkj.htmusic.mymodule.activity.NestViewPager
+                android:id="@+id/message_viewpager"
+                android:layout_below="@+id/message_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

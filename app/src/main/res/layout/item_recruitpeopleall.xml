@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/participate_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/project_image"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_width="@dimen/dimen_48"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:src="@mipmap/ic_launcher" />
+        <TextView
+            android:id="@+id/registration_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/project_image"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_centerVertical="true"
+            android:text="一白二穷工作室"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/size_16" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_publish_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/registration_status"
+            android:layout_toLeftOf="@+id/next"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待签约"
+            android:textColor="@color/registration_status_color"
+            android:textSize="@dimen/size_13" />
+    </RelativeLayout>
+
+
+</LinearLayout>

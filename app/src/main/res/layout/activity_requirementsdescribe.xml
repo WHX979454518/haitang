@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45">
+        <ImageView
+            android:id="@+id/requirementsDescribe_finish"
+            android:src="@mipmap/icon_login_close"
+            android:padding="@dimen/dimen_10"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/requirementsDescribe_title"
+            android:text=""
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/requirementsDescribe_save"
+            android:text="保存"
+            android:textColor="@color/base_blue"
+            android:textSize="@dimen/size_15"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:background="@color/toolbar_botom_devicer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1">
+    </LinearLayout>
+
+    <TextView
+        android:text="需求描述"
+        android:textColor="@color/header_color"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:textSize="@dimen/size_17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/ed_requirements_describe"
+        android:hint="例如：项目创作背景、其他创作人员情况、希望创作人得要求等"
+        android:background="@null"
+        android:textColor="@color/color_66_text"
+        android:textSize="@dimen/size_14"
+        android:textColorHint="@color/not_choose_color"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

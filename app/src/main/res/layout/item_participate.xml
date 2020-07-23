@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/participate_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20">
+
+        <TextView
+            android:id="@+id/registration_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:text="儿童游戏背景音乐商业使用权购买..."
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/size_16" />
+
+        <TextView
+            android:id="@+id/registration_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:text=""
+            android:textColor="@color/color_66_text"
+            android:textSize="@dimen/size_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_14">
+
+        <TextView
+            android:id="@+id/project_arrangements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:text="编曲"
+            android:textColor="@color/header_prompt_color2"
+            android:textSize="@dimen/size_13" />
+
+        <TextView
+            android:id="@+id/progect_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:text="400-800"
+            android:textColor="@color/base_blue"
+            android:textSize="@dimen/size_15" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20">
+
+        <TextView
+            android:id="@+id/project_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:text="广播剧"
+            android:textColor="@color/header_prompt_color2"
+            android:textSize="@dimen/size_13" />
+
+        <TextView
+            android:id="@+id/project_huai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_toRightOf="@+id/project_radio"
+            android:text="国风"
+            android:textColor="@color/header_prompt_color2"
+            android:textSize="@dimen/size_13" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15">
+
+        <ImageView
+            android:id="@+id/project_image"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/project_musicans_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_9"
+            android:layout_toRightOf="@+id/project_image"
+            android:text="音乐人名字"
+            android:textColor="@color/color_66_text"
+            android:textSize="@dimen/size_13" />
+
+        <TextView
+            android:text="3月18日"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:textColor="@color/header_prompt_color2"
+            android:textSize="@dimen/size_12"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10"
+        android:background="@color/ed_code_color"></LinearLayout>
+
+
+    <View
+        style="@style/view_line_h"
+        android:layout_marginLeft="@dimen/dimen_90"
+        android:visibility="gone" />
+
+</LinearLayout>

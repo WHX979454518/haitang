@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/item"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/projectdetails_lyrics"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:text="作词"
+            android:layout_below="@+id/xuqiugongzhong"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dimen_25"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/color_66_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/projectdetails_money"
+            android:text="300-800"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_centerVertical="true"
+            android:layout_alignBottom="@+id/projectdetails_lyrics"
+            android:layout_toRightOf="@+id/projectdetails_lyrics"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/color_66_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/projectdetails_state"
+            android:text="招募未开始"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_centerVertical="true"
+            android:layout_alignBottom="@+id/projectdetails_lyrics"
+            android:layout_toRightOf="@+id/projectdetails_money"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/header_prompt_color2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/projectdetails_more"
+            android:src="@mipmap/icon_list_more_gray"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/projectdetails_lyrics"
+            android:padding="@dimen/dimen_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

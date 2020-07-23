@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/cooperation_offer_rl"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:layout_marginBottom="@dimen/dimen_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/hezuobaojia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_15"
+                    android:text="合作报价"
+                    android:textColor="@color/color_66_text"
+                    android:textSize="@dimen/size_13" />
+
+                <EditText
+                    android:id="@+id/edit_add"
+                    android:layout_toLeftOf="@+id/identity"
+                    android:layout_below="@+id/hezuobaojia"
+                    android:hint="点击添加工种和报价"
+                    android:background="@null"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/size_14"
+                    android:textColorHint="@color/not_choose_color"
+                    android:layout_marginTop="@dimen/dimen_9"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/identity"
+                    android:text="添加"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/base_blue"
+                    android:textSize="@dimen/size_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/graduate_school_rl"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:layout_marginBottom="@dimen/dimen_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/biyeyuanxiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_15"
+                    android:text="毕业院校"
+                    android:textColor="@color/color_66_text"
+                    android:textSize="@dimen/size_13" />
+
+                <EditText
+                    android:layout_below="@+id/biyeyuanxiao"
+                    android:hint="点击输入毕业院校"
+                    android:background="@null"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/size_14"
+                    android:textColorHint="@color/not_choose_color"
+                    android:layout_marginTop="@dimen/dimen_9"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/participate_work_rl"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:layout_marginBottom="@dimen/dimen_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/canyuzuopin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_15"
+                    android:text="参与作品/演出"
+                    android:textColor="@color/color_66_text"
+                    android:textSize="@dimen/size_13" />
+
+                <EditText
+                    android:layout_below="@+id/canyuzuopin"
+                    android:hint="例如：《歌名》作词、《歌名》作曲。"
+                    android:background="@null"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/size_14"
+                    android:textColorHint="@color/not_choose_color"
+                    android:layout_marginTop="@dimen/dimen_9"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/self_assessment_rl"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:layout_marginBottom="@dimen/dimen_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ziwopingjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_15"
+                    android:text="自我评价"
+                    android:textColor="@color/color_66_text"
+                    android:textSize="@dimen/size_13" />
+
+                <EditText
+                    android:layout_below="@+id/ziwopingjia"
+                    android:hint="例如：一个热爱古风和汉服的词作。"
+                    android:background="@null"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/size_14"
+                    android:textColorHint="@color/not_choose_color"
+                    android:layout_marginTop="@dimen/dimen_9"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

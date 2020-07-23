@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/project_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20">
+
+            <TextView
+                android:id="@+id/project_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:text="贴唱后期混音200一首"
+                android:textColor="@color/header_color"
+                android:textSize="@dimen/size_16" />
+
+            <TextView
+                android:id="@+id/progect_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:text="8k-10k"
+                android:textColor="@color/base_blue"
+                android:textSize="@dimen/size_15" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20">
+
+            <TextView
+                android:id="@+id/project_arrangements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:text="编曲"
+                android:textColor="@color/header_prompt_color2"
+                android:textSize="@dimen/size_13" />
+
+            <TextView
+                android:id="@+id/project_composition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_toRightOf="@+id/project_arrangements"
+                android:text="作曲"
+                android:textColor="@color/header_prompt_color2"
+                android:textSize="@dimen/size_13" />
+
+            <TextView
+                android:id="@+id/project_musicians"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_toRightOf="@+id/project_composition"
+                android:text="音乐人"
+                android:textColor="@color/header_prompt_color2"
+                android:textSize="@dimen/size_13" />
+
+            <TextView
+                android:id="@+id/progect_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:text="12:14"
+                android:textColor="@color/header_prompt_color2"
+                android:textSize="@dimen/size_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20">
+
+            <TextView
+                android:id="@+id/project_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:text="广播剧"
+                android:textColor="@color/header_prompt_color2"
+                android:textSize="@dimen/size_13" />
+
+            <TextView
+                android:id="@+id/project_huai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_toRightOf="@+id/project_radio"
+                android:text="国风"
+                android:textColor="@color/header_prompt_color2"
+                android:textSize="@dimen/size_13" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:background="@color/toolbar_botom_devicer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1">
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/project_state_rl"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_marginBottom="@dimen/dimen_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/project_musicans_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_toRightOf="@+id/project_image"
+            android:layout_centerVertical="true"
+            android:text="状态（审核中）"
+            android:textColor="@color/color_66_text"
+            android:textSize="@dimen/size_14" />
+
+        <TextView
+            android:text="请等待系统审核"
+            android:textColor="@color/header_prompt_color2"
+            android:textSize="@dimen/size_12"
+            android:layout_toLeftOf="@+id/project_state_image"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/project_state_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:src="@mipmap/icon_publish_more"
+            android:layout_marginBottom="@dimen/dimen_20"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10"
+        android:background="@color/ed_code_color">
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_h"
+        android:layout_marginLeft="@dimen/dimen_90"
+        android:visibility="gone" />
+
+</LinearLayout>

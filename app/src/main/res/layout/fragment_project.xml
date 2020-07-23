@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/search_rl"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50">
+
+        <TextView
+            android:id="@+id/haitang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="海塘"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_27"/>
+
+        <RelativeLayout
+            android:id="@+id/home_search"
+            android:layout_toRightOf="@+id/haitang"
+            android:layout_toLeftOf="@+id/music"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_7"
+            android:layout_marginBottom="@dimen/dimen_7"
+            android:background="@drawable/bg_search">
+            <ImageView
+                android:id="@+id/layout_top_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dimen_10"
+                android:src="@mipmap/icon_top_research"
+                />
+            <EditText
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/layout_top_search"
+                android:background="@null"
+                android:textColorHint="@color/header_prompt_color2"
+                android:textSize="@dimen/size_14"
+                android:hint="搜索项目名、关键词"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/music"
+            android:padding="@dimen/dimen_8"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:src="@mipmap/icon_index_play"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main_content"
+        android:layout_below="@+id/search_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <com.mxkj.htmusic.toolmodule.utils.SuperSwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.mxkj.htmusic.toolmodule.utils.SuperSwipeRefreshLayout>
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:stateListAnimator="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentScrim="#00000000"
+                app:expandedTitleMarginEnd="0dp"
+                app:expandedTitleMarginStart="0dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:titleEnabled="false">
+
+                <!--头部的内容-->
+                <FrameLayout
+                    android:id="@+id/layout_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_banner"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:layout_marginRight="@dimen/dimen_15"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/dimen_10">
+                        <com.mxkj.htmusic.toolmodule.utils.bannerLayout.HomeTopBannerLayout
+                            android:id="@+id/banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp">
+
+                            <ImageView
+                                android:id="@+id/img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop" />
+
+                        </com.mxkj.htmusic.toolmodule.utils.bannerLayout.HomeTopBannerLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                </FrameLayout>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+            <!--工种选择-->
+            <LinearLayout
+                        android:id="@+id/category"
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_45"
+                        tools:ignore="UnknownId">
+
+                        <RelativeLayout
+                            android:id="@+id/type_rl"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/type"
+                                android:text="工种"
+                                android:layout_width="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_height="match_parent"
+                                android:textSize="@dimen/size_15"
+                                android:textColor="@color/color_66_text"/>
+                            <ImageView
+                                android:layout_marginLeft="@dimen/dimen_5"
+                                android:layout_toRightOf="@+id/type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/icon_login_xiala"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/remuneration_rl"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/remuneration"
+                                android:text="按报酬"
+                                android:layout_width="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_height="match_parent"
+                                android:textSize="@dimen/size_15"
+                                android:textColor="@color/color_66_text"/>
+                            <ImageView
+                                android:layout_marginLeft="@dimen/dimen_5"
+                                android:layout_toRightOf="@+id/remuneration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/icon_login_xiala"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/time_rl"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/time"
+                                android:text="按时间"
+                                android:layout_width="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_height="match_parent"
+                                android:textSize="@dimen/size_15"
+                                android:textColor="@color/color_66_text"/>
+                            <ImageView
+                                android:layout_marginLeft="@dimen/dimen_5"
+                                android:layout_toRightOf="@+id/time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/icon_login_xiala"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <ImageView
+        android:id="@+id/release_project_image"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/icon_publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/tv"
+        android:text="项目"
+        android:layout_width="@dimen/dimen_100"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

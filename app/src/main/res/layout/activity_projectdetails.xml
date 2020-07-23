@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45">
+        <ImageView
+            android:id="@+id/projectdetails_back_image"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_top_back_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/projectdetails_title"
+            android:text=""
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/size_17"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/projectdetails_image1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dimen_5"
+            android:src="@mipmap/icon_top_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/projectdetails_image2"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dimen_5"
+            android:layout_toLeftOf="@+id/projectdetails_image1"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:src="@mipmap/icon_top_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/projectdetails_image3"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dimen_5"
+            android:layout_toLeftOf="@+id/projectdetails_image2"
+            android:src="@mipmap/icon_top_share"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/dimen_10"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/project_details_name"
+                        android:layout_marginTop="@dimen/dimen_25"
+                        android:text="古风歌曲制作"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:textColor="@color/header_color"
+                        android:textSize="@dimen/size_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.mxkj.htmusic.toolmodule.utils.MultiLineRadioGroup
+                        android:id="@+id/mulrg_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_15"
+                        android:layout_marginRight="@dimen/dimen_15"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        app:child_layout="@layout/child_pond_ck_tag"
+                        app:child_margin_horizontal="@dimen/dimen_5" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:layout_marginRight="@dimen/dimen_15"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/project_details_budget"
+                            android:text="8k-10k"
+                            android:textSize="@dimen/size_15"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="@color/base_blue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/project_details_created_at"
+                            android:text="2月18号"
+                            android:layout_alignParentRight="true"
+                            android:textSize="@dimen/size_12"
+                            android:textColor="@color/header_prompt_color2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/dimen_20"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:layout_marginRight="@dimen/dimen_15"
+                        android:background="@color/toolbar_botom_devicer"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"></LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/dimen_15"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:layout_marginRight="@dimen/dimen_15"
+                        android:layout_marginBottom="@dimen/dimen_15"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/projectdetails_head_image"
+                            android:src="@mipmap/ic_launcher_round"
+                            android:layout_width="@dimen/dimen_42"
+                            android:layout_height="@dimen/dimen_42" />
+
+                        <TextView
+                            android:id="@+id/projectdetails_name"
+                            android:text="姓名"
+                            android:layout_toRightOf="@+id/projectdetails_head_image"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_marginTop="@dimen/dimen_5"
+                            android:textSize="@dimen/size_12"
+                            android:textColor="@color/header_prompt_color2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/project_details_reputation_score"
+                            android:text="信誉分"
+                            android:layout_below="@+id/projectdetails_name"
+                            android:layout_alignBottom="@+id/projectdetails_head_image"
+                            android:layout_toRightOf="@+id/projectdetails_head_image"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_marginTop="@dimen/dimen_5"
+                            android:textSize="@dimen/size_12"
+                            android:textColor="@color/base_blue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:id="@+id/projectdetails_level_image"
+                            android:layout_toRightOf="@+id/projectdetails_name"
+                            android:layout_alignBottom="@+id/projectdetails_name"
+                            android:layout_marginBottom="@dimen/dimen_2"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:src="@mipmap/ic_launcher_round"
+                            android:layout_width="@dimen/dimen_22"
+                            android:layout_height="@dimen/dimen_12" />
+
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/icon_publish_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dimen_40"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="需求工种"
+                    android:id="@+id/xuqiugongzhong"
+                    android:textSize="@dimen/size_18"
+                    android:textColor="@color/header_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <com.mxkj.htmusic.toolmodule.utils.MyListView
+                    android:id="@+id/projectdetails_lv"
+                    android:layout_below="@+id/xuqiugongzhong"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:divider="#00000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.mxkj.htmusic.toolmodule.utils.MyListView>
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dimen_39"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="基本信息"
+                    android:id="@+id/jibenxinxi"
+                    android:textSize="@dimen/size_18"
+                    android:textColor="@color/header_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/projectdetails_work_purposes_tv"
+                    android:text="作品用途"
+                    android:layout_below="@+id/jibenxinxi"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/color_66_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/projectdetails_work_purposes"
+                    android:text="连续剧/动画/综艺-全渠道"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_alignBottom="@+id/projectdetails_work_purposes_tv"
+                    android:layout_toRightOf="@+id/projectdetails_work_purposes_tv"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/color_66_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/projectdetails_confidentiality_period_tv"
+                    android:text="保密期限"
+                    android:layout_below="@+id/projectdetails_work_purposes_tv"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/color_66_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/projectdetails_confidentiality_period"
+                    android:text="三个月"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_alignBottom="@+id/projectdetails_confidentiality_period_tv"
+                    android:layout_toRightOf="@+id/projectdetails_confidentiality_period_tv"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/color_66_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dimen_40"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="需求描述"
+                    android:id="@+id/xuqiumiaoshu"
+                    android:textSize="@dimen/size_18"
+                    android:textColor="@color/header_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/ed_requirements_describe"
+                    android:layout_below="@+id/xuqiumiaoshu"
+                    android:hint="目的：寻作编曲，为下个月原创曲储备寻找编曲。长期合作，可绑定；
+作品要求：请作编曲大佬将目前个人最擅长的风格作品或链接发至邮箱972033690@qq.com；
+要求17年以后作品，如链接中有多首作品请标明型1首...
+推荐风格：古风燃向、古风柔情、现代温暖、电子摇滚
+
+其他要求：
+1.想说什么都能做什么都擅长的不要联系。...
+
+2.名不副实漫天要价的再见。
+
+3.没有做过相同风格的不接受尝试，只会仿其他作品离开范例不能完成的也请无需联系。
+
+4.作编曲有自己的思路和创新，能够独立创作，音源优质充足。"
+                    android:background="@null"
+                    android:textColor="@color/color_66_text"
+                    android:textSize="@dimen/size_14"
+                    android:textColorHint="@color/color_66_text"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.mxkj.htmusic.projectmodule.fragment.expandabletextview.ExpandableTextView
+                    android:id="@+id/expandableTextView"
+                    app:animDuration="200"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:layout_below="@+id/xuqiumiaoshu"
+                    android:padding="8dp"
+                    app:collapseDrawable="@drawable/ic_done_white"
+                    app:collapseExpandGrarity="right"
+                    app:collapseExpandTextColor="@color/base_blue"
+                    app:contentTextColor="@color/black"
+                    app:contentTextSize="14sp"
+                    app:drawableGrarity="left"
+                    app:expandDrawable="@drawable/ic_launcher"
+                    app:maxCollapsedLines="5"
+                    app:textCollapse="@string/collapse"
+                    app:textExpand="@string/expand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.mxkj.htmusic.projectmodule.fragment.expandabletextview.ExpandableTextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/projectdetails_apply_number_rl"
+                android:layout_marginTop="@dimen/dimen_40"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/yingzhengliebiao"
+                    android:text="应征列表"
+                    android:textSize="@dimen/size_18"
+                    android:textColor="@color/header_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/projectdetails_apply_number"
+                    android:text=""
+                    android:layout_below="@+id/yingzhengliebiao"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/color_66_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/yingzhengliebiao"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:src="@mipmap/icon_publish_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/line"
+                android:orientation="vertical"
+                android:background="@color/toolbar_botom_devicer"
+                android:layout_marginTop="@dimen/dimen_30"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1">
+            </LinearLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40">
+
+                <TextView
+                    android:id="@+id/projectdetails_contact1"
+                    android:textSize="@dimen/size_16"
+                    android:gravity="center"
+                    android:background="@drawable/bg_contact"
+                    android:alpha="0.2"
+                    android:textColor="@color/base_blue"
+                    android:layout_width="@dimen/dimen_125"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/projectdetails_contact"
+                    android:text="联系TA"
+                    android:textSize="@dimen/size_16"
+                    android:gravity="center"
+                    android:textColor="@color/base_blue"
+                    android:layout_width="@dimen/dimen_125"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/projectdetails_sign_up"
+                    android:text="我要报名"
+                    android:layout_toRightOf="@+id/projectdetails_contact"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/size_16"
+                    android:gravity="center"
+                    android:background="@drawable/bg_baoming"
+                    android:textColor="@color/white"
+                    android:layout_width="@dimen/dimen_205"
+                    android:layout_height="@dimen/dimen_40" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+    
+</LinearLayout>

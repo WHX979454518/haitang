@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/l_transparent">
+
+
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:src="@mipmap/icon_share_qqspace"
+        android:layout_width="match_parent"
+        android:layout_height="95dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_16">
+
+        <CheckBox
+            android:id="@+id/cb_composition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:clickable="false"
+            android:drawableLeft="@drawable/selector_contract_check"
+            android:focusable="true"
+            android:focusableInTouchMode="false" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我已阅读"
+            android:textSize="@dimen/size_13"
+            android:textColor="@color/header_prompt_color2" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="112dp"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_96"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:background="@color/tv_verification_code_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_5">
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/hetong"
+                    android:text="合同"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/size_18"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/hetongneirong"
+                    android:layout_below="@+id/hetong"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:layout_marginLeft="@dimen/dimen_21"
+                    android:layout_marginRight="@dimen/dimen_21"
+                    android:text="该作品在乙方向甲方提交之后，必须经甲方验收。
+经甲方验收审查合格后，视为该作品正式交付。
+作品经审查、研讨后，如需修改，乙方应按甲方的要求在甲方指定的期限内完成修改。
+
+1、甲方向乙方支付全部委托创作费，已完成作品版权归甲方，由甲方自行或委托第三方予以修改或以其他方式使用。
+3、甲方应按约定的期限接受乙方交付的作品并进行审读，该作品如符合约定的创作意图和要求，甲方应向乙方支付约定的报酬；
+4、甲方向乙方提供上述作品的文字脚本，委托乙方创作上述作品，其著作权归属甲方，作品署名方式由甲方决定；
+5、乙方不得将本作品的全部或一部分授予第三人使用。如有违反，甲方有权要求乙方给予经济赔偿并可终止本合同"
+                    android:textColor="@color/color_66_text"
+                    android:textSize="@dimen/size_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/send_contract_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="72dp"
+        android:text="发送合同"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:textSize="@dimen/size_16"
+        android:textColor="@color/white_text"
+        android:background="@drawable/bg_releaseproject"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40" />
+
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/player_all_music"
+        android:background="@drawable/bg_type_layout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/baomiqixian"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:textColor="@color/color_66_text"
+            android:textSize="@dimen/size_17"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/dimen_6"
+            android:text="作品风格(可多选)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/determine"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/base_blue"
+            android:textSize="@dimen/size_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dimen_6"
+            android:text="确定"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:background="@null"
+        android:textColorHint="@color/header_prompt_color2"
+        android:hint="多个风格用空格分隔"
+        android:minHeight="@dimen/dimen_50"
+        android:textSize="@dimen/size_14"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50" />
+
+
+    <com.mxkj.htmusic.toolmodule.utils.MultiLineRadioGroup
+        android:id="@+id/mulrg_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_35"
+        android:layout_marginRight="@dimen/dimen_15"
+        app:child_layout="@layout/child_pond_ck_tag"
+        app:child_margin_horizontal="@dimen/dimen_5" />
+
+    <LinearLayout
+        android:background="@color/toolbar_botom_devicer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1" />
+
+    <RelativeLayout
+        android:id="@+id/cancel_rl"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60">
+        <TextView
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_cancel"
+            android:text="取消"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>
+

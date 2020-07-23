@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/participate_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/project_image"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_width="@dimen/dimen_48"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:src="@mipmap/ic_launcher" />
+        <TextView
+            android:id="@+id/registration_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/project_image"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_alignTop="@+id/project_image"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="一白二穷工作室"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/size_16" />
+
+        <ImageView
+            android:layout_toRightOf="@+id/registration_name"
+            android:layout_alignTop="@+id/registration_name"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:src="@mipmap/icon_musician_lv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/registration_status"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/registration_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="信誉评分 4.9"
+            android:textColor="@color/base_blue"
+            android:textSize="@dimen/size_13" />
+
+        <TextView
+            android:id="@+id/registration_sing_see"
+            android:text="唱见"
+            android:layout_alignBottom="@+id/project_image"
+            android:layout_alignLeft="@+id/registration_name"
+            android:textColor="@color/color_66_text"
+            android:textSize="@dimen/size_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/fuhaonone"
+            android:text="|"
+            android:layout_toRightOf="@+id/registration_sing_see"
+            android:layout_alignBottom="@+id/registration_sing_see"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/registration_offer"
+            android:text="报价300￥"
+            android:layout_toRightOf="@+id/fuhaonone"
+            android:layout_alignBottom="@+id/fuhaonone"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:textColor="@color/color_66_text"
+            android:textSize="@dimen/size_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/fuhaontwo"
+            android:text="|"
+            android:layout_toRightOf="@+id/registration_offer"
+            android:layout_alignBottom="@+id/registration_offer"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/registration_expect"
+            android:text="预计用时 45天"
+            android:layout_toRightOf="@+id/fuhaontwo"
+            android:layout_alignBottom="@+id/fuhaontwo"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:textColor="@color/color_66_text"
+            android:textSize="@dimen/size_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_height="@dimen/dimen_105">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="赵客缦胡缨，吴钩霜雪明。
+银鞍照白马，飒沓如流星。
+十步杀一人，千里不留行。
+事了拂衣去，深藏身与名。"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_marginBottom="@dimen/dimen_20"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/size_8"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/ed_code_color"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_55">
+        <TextView
+            android:text="“做过多首音乐，经验很丰富，有自己的人脉关系，能编会写”"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/color_66_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="联系TA"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/base_blue"
+            android:background="@drawable/bg_registrationstas_bg"
+            android:padding="@dimen/dimen_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/registration_selected"
+            android:text="选定TA"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/base_blue"
+            android:background="@drawable/bg_registrationstas_bg"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:padding="@dimen/dimen_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

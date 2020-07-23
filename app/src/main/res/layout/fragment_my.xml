@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/fragment_my_head" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_below="@+id/my_ll"
+                android:background="@color/ed_code_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_10">
+            </LinearLayout>
+
+            <include layout="@layout/fragment_my_menue" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
